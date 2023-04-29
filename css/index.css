@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*------------- Navigation style start ------------*/
+nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 1vw;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 10vw;
+}
+
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 2.5vw;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.78rem;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #a0a0a0;
+    text-decoration: underline;
+
+}
+
+.nav-left,
+.nav-left div {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    align-items: end;
+}
+
+.nav-left p {
+    margin-right: 15%;
+}
+
+sup {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    /* width: 40%; */
+    /* height: 95%; */
+    min-width: 20%;
+    /* max-height: 54%; */
+    text-align: center;
+    font-size: 0.6rem;
+    /* padding: 1px; */
+    /* margin: 0px; */
+    margin-bottom: 2px;
+}
+
+/*------------- Navigation style end ------------*/
+
+/*------------- section-1 style start ------------*/
+
+.section-1 {
+    height: 86vh;
+    background-color: #faedeb;
+    margin: 0 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 div {
+    width: 50%;
+}
+
+.section-1-right p,
+.section-3 p {
+    font-size: 0.8rem;
+    color: rgb(106, 106, 106);
+    font-weight: 300;
+}
+
+.section-1-right h2 {
+    font-size: 3rem;
+}
+
+button {
+    width: 15vw;
+    height: 6vh;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: 700;
+    margin: 3vh;
+}
+
+
+.section-1-left {
+    background-image: url("../img/hero-bg.png");
+    overflow: hidden;
+}
+
+.section-1-left img {
+    width: 100%;
+    height: 86vh;
+}
+
+/*------------- section-1 style end ------------*/
+
+/*------------- section-2 style start ------------*/
+
+.section-2 {
+    margin: 0 11vw;
+    height: 80vh;
+}
+
+.SUMMER {
+    font-size: 0.8rem;
+    color: rgb(106, 106, 106);
+    font-weight: 300;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.section-2 h3,
+.section-6 h3,
+.section-7 h3 {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card img {
+    height: 40vh;
+    margin: 0 1VW;
+    transition: 2s ease;
+}
+
+.ss {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.hh:hover .ss {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    z-index: 1;
+    transform: translate(0%, -100%);
+}
+
+.hh:hover .card-text {
+
+    transform: translate(0%, -460%);
+
+}
+
+.card p {
+    color: #d0d0d0;
+    font-size: 0.8rem;
+}
+
+.card .price {
+    color: #797979;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/*------------- section-2 style end ------------*/
+
+/*------------- section-3 style start ------------*/
+
+.section-3 {
+    margin: 0 11vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.section-3 div {
+    width: 48%;
+}
+
+.section-3 img {
+    width: 98%;
+}
+
+.right {
+    width: 100%;
+}
+
+.section-3 h2 {
+    font-size: 2rem;
+}
+
+/*------------- section-3 style end ------------*/
+
+/*------------- section-4 style start ------------*/
+
+
+.section-4 {
+    margin: 0 3.5vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(70, 70, 70, 0.305), rgba(0, 0, 0, 0.21)), url("../img/bg-01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 15vh;
+}
+
+.section-4 p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+}
+
+.section-4 h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.section-4 h5 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 3vh;
+}
+
+/*------------- section-4 style end ------------*/
+
+/*------------- section-5 style start ------------*/
+
+
+.section-5 {
+    margin: 0 3.5vw;
+    /* height: 95vh; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-5 .right {
+    background-color: #FAEDEB;
+    width: 150%;
+}
+
+.section-5 .right img {
+    position: relative;
+    width: 80%;
+    bottom: 6vh;
+}
+
+.section-5 .left {
+    position: relative;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.section-5 p {
+    color: #797979;
+    font-size: 0.8rem;
+}
+
+
+
+
+/*------------- section-5 style end ------------*/
+
+/*------------- section-6 style start ------------*/
+
+
+
+.section-6 {
+    height: 80vh;
+    margin: 0 11vw;
+}
+
+
+
+/*------------- section-6 style end ------------*/
+
+/*------------- section-7 style start ------------*/
+
+
+
+
+
+.section-7 {
+    height: 50vh;
+    margin: 0 11vw;
+    text-align: center;
+}
+
+
+.section-7 a {
+    color: black;
+    font-weight: 600;
+}
+
+.star {
+    color: #f8ac4c;
+    margin-top: 5vh;
+}
+
+.section-7 p {
+
+    color: #797979;
+    font-size: 0.8rem;
+}
+
+
+
+
+/*------------- section-7 style end ------------*/
+
+/*------------- section-8 style start ------------*/
+
+
+
+
+.section-8 {
+    height: 100vh;
+    margin: 0 11vw;
+    display: flex;
+    /* justify-content: space-evenly; */
+    position: relative;
+}
+
+.section-8 div {
+    width: 50%;
+    margin-right: 2vw;
+}
+
+.section-8 img {
+    width: 100%;
+}
+
+.section-8 .left div,
+.section-8 .right div {
+    position: absolute;
+    top: 65vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.763);
+    padding: 1vh 0;
+    width: 45%;
+    margin-left: 1vw;
+}
+
+
+
+
+/*------------- section-8 style end ------------*/
+
+/*------------- footer style start ------------*/
+
+
+
+
+footer {
+    height: 80vh;
+    margin: 0 3.5vw;
+    background-color: #FAEDEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    margin-top: 6vh;
+}
+
+footer p {
+    color: #797979;
+    font-size: 0.8rem;
+}
+
+input {
+    width: 30vw;
+    height: 6vh;
+    border: #a7a7a7a1 solid 1px;
+}
+
+
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 2.5vw;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #797979;
+    font-size: 0.78rem;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+
+
+.Icons {
+    background-color: white;
+    height: 3vh;
+}
+
+.Icons i {
+    /* padding: 0 2vw; */
+    width: 1vw;
+    margin: 0 1vw;
+}
+
+footer .end {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------- footer style end ------------*/
